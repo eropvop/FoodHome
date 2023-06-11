@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotFood</title>
+    <link rel="stylesheet" href="otziv.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logoa">
+                <img src="images/лого.png" alt="логотип копании" class="logoimg">
+            </a>
+            <h1>Food home</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="hotfood.html" class="nava">горячая еда</a></li>
+                <li><a href="salat.html" class="nava">салаты</a></li>
+                <li><a href="#" class="nava">напитки</a></li>
+                <li><a href="frukti.html" class="nava">фрукты, овощи</a></li>
+                <li><a href="kontakt.html" class="nava">контакты</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <img src="images/поиск.png" alt="поиск информации" class="usersearch">
+            <img src="images/user.png" alt="личный кабинет" class="usersearch">
+        </div>
+     </header>
+     <main>
+        <div class="wrapper">
+            <!--Поле для информации пользователя-->
+            <h2 class="wrapper__title">Заполните форму для заказа!</h2>
+            <!--Добавьте action-->
+            <form class="form">
+                <div class="user">
+                    <ul class="user-info">
+                        <li class="user-info__item">
+                            <!--Вставь сюда label для ФИО-->
+                            <label for="name">Ф.И.О</label>
+                            <input type="text" name="name" id="name" placeholder="Введите ваше ФИО">
+                        </li>
+                        <li class="user-info__item">
+                            <!--Вставь сюда label для почты-->
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="Введите ваш e-mail">
+                        </li>
+                    </ul>
+                    <!--Поля для адреса и даты-->
+                    <ul class="address-date">
+                        <li class="user-info__item">
+                            <!--Вставь сюда label для адреса-->
+                            <label for="address">Укажите ваш адрес</label>
+                            <input type="text" name="" id="address" placeholder="Ваш адрес">
+                        </li>
+                        <li class="user-info__item">
+                            <!--Вставь сюда label для даты заказа-->
+                            <label for="date">Укажите дату доставки</label>
+                            <input type="date" name="" id="date">
+                        </li>
+                    </ul>
+                </div>
+                <div class="delivery">
+                    <ul class="delivery-info">
+                        <h3 class="delivery__title">Выберете способ доставки</h3>
+                        <li class="delivery-info__item">
+                            <!--Вставь сюда label для способа доставки-->
+                            <label for="courier">Курьер</label>
+                            <input type="radio" id="courier">
+                        </li>
+                        <li class="delivery-info__item">
+                            <!--Вставь сюда label для способа доставки-->
+                            <label for="sam">Самовывоз</label>
+                            <input type="radio" id="sam">
+                        </li>
+                        <li class="delivery-info__item">
+                            <!--Вставь сюда label для способа доставки-->
+                            <label for="mail">Почтой</label>
+                            <input type="radio" id="mail">
+                        </li>
+                    </ul>
+                    <ul class="delivery-info">
+                        <h3 class="delivery__title">Выберете доп.услуги</h3>
+                        <li class="delivery-info__item">
+                            <!--Вставь сюда label для доп услуг-->
+                            <label for="dop1">Быстрый курьер</label>
+                            <input type="checkbox" name="" id="dop1">
+                        </li>
+                        <li class="delivery-info__item">
+                            <!--Вставь сюда label для доп услуг-->
+                            <label for="dop2">Грузчики</label>
+                            <input type="checkbox" name="" id="dop2">
+                        </li>
+                        <li class="delivery-info__item">
+                            <!--Вставь сюда label для доп услуг-->
+                            <label for="dop3">Бронебойная упаковка</label>
+                            <input type="checkbox" name="" id="dop3">
+                        </li>
+                    </ul>
+                </div>
+                    <div class="select">
+                        <h3 class="select__title">Оставьте свой комментарий и выберите оплату </h3>
+                        <select name="" id="">
+                            <option>Онлайн</option>
+                            <option>Наличными при получении</option>
+                            <option>Картой при получении</option>
+                        </select>
+                        <!--Вставь label для комментария-->
+                        <label for="comment">Дополнительный комментарий</label>
+                        <textarea name="" id="comment" cols="30" rows="10" placeholder="Ваш комментарий"></textarea>
+                    </div>
+                <!--Вставьте кнопку-->
+                <button type="submit">Готово!<button>
+            </form>
+        </div>
+             </main>
+    <footer>
+    <p class="footerp">
+        @foodhome 2022 все права защищены
+    </p>
+    <div class="icon">
+        <img src="images/334807_vk_vkontakte_contact_kontakt_logo_icon 1.png" alt="" class="iconimg">
+        <img src="images/3787425_telegram_logo_messanger_social_social media_icon 1.png" alt="" class="iconimg">
+        <img src="images/5296520_bubble_chat_mobile_whatsapp_whatsapp logo_icon 1.png" alt="" class="iconimg">
+    </div>
+ </footer>   
+</body>
+</html>

@@ -1,0 +1,36 @@
+var page = document.querySelector(".body");
+var themeButton = document.querySelector(".themeButton");
+themeButton.onclick = function() {
+    page.classList.toggle('lightTheme');
+    page.classList.toggle('darkTheme');
+    };
+
+    $('.carousel').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        autoplay:true,
+        autoplaySpeed:1000,
+        prevArrow: '<img src="images/Arrow_left.svg">',
+        nextArrow: '<img src="images/Arrow_right.svg">',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
